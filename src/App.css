@@ -1,0 +1,235 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+}
+
+body {
+  background: #f4f6f9;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+}
+.green,
+.red {
+  height: 30px;
+  border-radius: 3px;
+  border: none;
+  outline: none;
+  color: white;
+  width: 8px;
+  margin: 4px 0;
+}
+h2,
+.transaction,
+.out,
+.in,
+.ino {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.in {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 12px;
+}
+.ino {
+  font-size: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.transaction {
+  display: block;
+  background: #f9f9f9;
+  padding: 20px;
+  border-radius: 10px;
+  margin: 15px 0;
+  box-shadow: inset 0 2px 6px rgba(0, 0, 0, 0.05);
+}
+#income2,
+#expense2 {
+  margin-right: 20px;
+}
+
+h2 {
+  margin-top: 20px;
+}
+.td {
+  justify-content: space-around;
+  margin-bottom: 30px;
+}
+
+h1 {
+  margin: 20px 0;
+  justify-content: center;
+  align-items: center;
+  display: flex;
+  text-align: center;
+  font-size: 2rem;
+  color: #333;
+}
+.info {
+  min-height: 500px;
+  height: auto;
+  width: 650px;
+  border: 1px solid black;
+  border-radius: 20px;
+  display: block;
+  margin: 0 auto;
+  background: #fff;
+  padding: 30px;
+  box-shadow: 0 5px 20px rgba(0, 0, 0, 0.1);
+}
+.add {
+  border: none;
+  outline: none;
+  text-align: center;
+  width: 80px;
+  height: 35px;
+  border-radius: 6px;
+  background-color: #4cafef;
+  color: white;
+  font-size: 15px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: 0.3s;
+}
+.balance {
+  padding-left: 50px;
+  font-size: 1.3rem;
+  font-weight: bold;
+  color: #444;
+}
+input[type="text"] {
+  outline: 2px black;
+  height: 35px;
+  font-size: 15px;
+  width: 45%;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  padding: 5px 10px;
+  transition: 0.3s;
+}
+input[type="radio"] {
+  font-size: 40px;
+  height: 50px;
+}
+
+.btn {
+  margin-left: auto;
+}
+
+.add:hover {
+  background-color: #3498db;
+}
+
+.total {
+  display: flex;
+  justify-content: space-around;
+  margin: 15px 0 0;
+}
+
+.td span {
+  font-size: 1.1rem;
+  font-weight: 600;
+}
+
+.aa {
+  color: #2ecc71;
+}
+
+.bb {
+  color: #e74c3c;
+}
+input[type="text"]:focus {
+  border-color: #4cafef;
+  outline: none;
+  box-shadow: 0 0 5px rgba(76, 175, 239, 0.5);
+}
+
+.ino label {
+  margin-left: 8px;
+  margin-right: 20px;
+  font-size: 16px;
+  color: #555;
+}
+h3{
+  text-align: center;
+  margin-top: 30px;
+}
+.addtra {
+  border: none;
+  outline: none;
+  height: 40px;
+  padding: 0 20px;
+  border-radius: 8px;
+  background-color: #27ae60;
+  color: white;
+  font-size: 16px;
+  cursor: pointer;
+  font-weight: 600;
+  transition: 0.3s;
+}
+
+.addtra:hover {
+  background-color: #219150;
+}
+
+.out {
+  margin-top: 30px;
+  display: inline;
+}
+
+.out > div {
+  display: flex;
+  gap: 20px;
+}
+.green {
+  background-color: #2ecc71;
+}
+
+.red {
+  background-color: #e74c3c;
+}
+
+.transactions-list {
+  margin-top: 15px;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  width: 100%;
+}
+
+.transaction-row {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background: #ecf3f9;
+  padding: 10px 15px;
+  border-radius: 8px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.05);
+  font-size: 15px;
+  width: 100%;
+  box-sizing: border-box;
+}
+
+.transaction-row .amount {
+  font-weight: bold;
+  color: #333;
+  flex: 1;
+}
+
+.transaction-row .desc {
+  flex: 2;
+  color: #555;
+}
+
+.transaction-row .type {
+  flex: 1;
+  text-align: center;
+  font-weight: 600;
+}
